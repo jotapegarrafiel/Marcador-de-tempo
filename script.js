@@ -2,7 +2,7 @@ function carregar(){
     let msg = document.querySelector('h1.title')
     let img = document.querySelector('img#imagem')
     let data = new Date()
-    let agora = 2 //data.getHours()
+    let agora = data.getHours()
     msg.innerHTML = `Agora são ${agora} horas.`
     if(agora >= 6 && agora <= 12){
         img.src = 'dia.png'
